@@ -1,11 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+<form action="/submit-form" method="POST">
+    <fieldset>
+        <legend>Información Personal</legend>
+
+        <!-- Campo de texto con etiqueta -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="introduce un nombre"><br>
+
+        <!-- Campo de selección con múltiples opciones -->
+        <label for="genero">Género:</label>
+        <select id="genero" name="genero">
+            <option value="femenino">Femenino</option>
+            <option value="masculino">Masculino</option>
+            <option value="otro">Otro</option>
+        </select><br>
+
+        <!-- Opciones de checkbox -->
+        <label for="newsletter">Suscribirse al boletín:</label>
+        <input type="checkbox" id="newsletter" name="newsletter" value="Yes"><br>
+
+        <!-- Opciones de radio -->
+        <label>¿Eres estudiante?</label>
+        <input type="radio" id="estudiante_si" name="estudiante" value="Si">
+        <label for="estudiante_si">Sí</label>
+        <input type="radio" id="estudiante_no" name="estudiante" value="No">
+        <label for="estudiante_no">No</label><br>
+
+        <!-- Área de texto multilínea -->
+        <label for="comentario">Comentarios:</label>
+        <textarea id="comentario" name="comentario" rows="4" cols="50"></textarea><br>
+
+        <!-- Botón de envío -->
+        <input type="submit" value="Enviar">
+
+        <!-- Botón genérico -->
+        <button type="button" onclick="alert('¡Gracias por tu interés!')">Mensaje de Agradecimiento</button>
+    </fieldset>
+</form>
